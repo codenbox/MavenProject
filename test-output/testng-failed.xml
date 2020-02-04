@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="codenbox.MavenProject.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- codenbox.MavenProject.LoginPageTest -->
+      <class name="codenbox.MavenProject.NavigationBarTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+          <include name="dropDownSelect"/>
+          <include name="basePageNavigationBar"/>
+        </methods>
+      </class> <!-- codenbox.MavenProject.NavigationBarTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

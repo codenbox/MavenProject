@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+       <listener class-name="codenbox.MavenProject.Listeners"/>
+       <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="codenbox.MavenProject.ValidTitleTest"/>
+    </classes>
+     </test> <!-- Test -->
+     
+   <test name="Validating NavigationBar">
+    <classes>  
+     <class name="codenbox.MavenProject.NavigationBarTest"/>
+      </classes>
+      </test>
+    
+   <test name="Validating login">
+    <classes>
+    <class name="codenbox.MavenProject.LoginPageTest"/>
+    </classes>
+    </test>
+ 
+</suite> <!-- Suite -->
